@@ -1,11 +1,12 @@
-﻿using Sonar.UserTracksManagement.Application.Database;
+﻿using DefaultNamespace;
+using Sonar.UserTracksManagement.Application.Database;
 using Sonar.UserTracksManagement.Core.Entities;
 
-namespace DefaultNamespace;
+namespace Sonar.UserTracksManagement.Application.Services;
 
 public class TrackManagerService : ITrackManagerService
 {
-    private UserTracksManagementDatabaseContext _dbContext;
+    private readonly UserTracksManagementDatabaseContext _dbContext;
     
     public TrackManagerService(UserTracksManagementDatabaseContext dbContext)
     {
@@ -38,7 +39,7 @@ public class TrackManagerService : ITrackManagerService
         var user = _dbContext.Users.Find(userId);
         if (user is null)
         {
-            throw new ArgumentException("user with given Id doesn't exists");
+            throw new ArgumentException("user with given Id doesn't exist");
         }
         return user.Tracks;
     }
@@ -49,7 +50,7 @@ public class TrackManagerService : ITrackManagerService
         var track = _dbContext.Tracks.Find(trackId);
         if (track is null)
         {
-            throw new ArgumentException("track with given Id doesn't exists");
+            throw new ArgumentException("track with given Id doesn't exist");
         }
         return availableTracks.Contains(track);
     }
