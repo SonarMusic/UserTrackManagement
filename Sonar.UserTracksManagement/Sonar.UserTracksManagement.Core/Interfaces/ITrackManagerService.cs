@@ -1,6 +1,6 @@
 ﻿using Sonar.UserTracksManagement.Core.Entities;
 
-namespace DefaultNamespace;
+namespace Sonar.UserTracksManagement.Application.Interfaces;
 
 public interface ITrackManagerService
 {

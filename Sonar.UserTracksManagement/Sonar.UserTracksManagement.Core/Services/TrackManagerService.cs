@@ -1,5 +1,5 @@
-﻿using DefaultNamespace;
-using Sonar.UserTracksManagement.Application.Database;
+﻿using Sonar.UserTracksManagement.Application.Database;
+using Sonar.UserTracksManagement.Application.Interfaces;
 using Sonar.UserTracksManagement.Core.Entities;
 
 namespace Sonar.UserTracksManagement.Application.Services;
