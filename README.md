@@ -21,6 +21,6 @@ If you want to check out other modules directly:
 
 ## Get in touch
 
-* ** [Dmitry Kapanin](https://github.com/ClwnYeti) <span style="color:green">(Teamlead)</span>**
+* **[Dmitry Kapanin](https://github.com/ClwnYeti) <span style="color:green">(Teamlead)</span>**
 * [Mihailichenko Gleb](https://github.com/vaner29)
 * [Serelllka](https://github.com/Serelllka)
